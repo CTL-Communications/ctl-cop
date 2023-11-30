@@ -1,5 +1,9 @@
 # Branch Manipulation
 
+## Get latest changes to your branch
+
+`git pull`
+
 ## Create a local branch
 
 `git checkout -b feature/CTL-123-my-task-title`

@@ -14,6 +14,10 @@ The following command will automatically be set to track from your local to the 
 
 ## Create a local development branch
 
+First, make sure to pull the latest changes! you want to start with the most updated version of the code
+
+`git pull`
+
 Create a local branch to start development work on your assigned task.
 
 `git checkout -b feature/CTL-123-my-task-title`
