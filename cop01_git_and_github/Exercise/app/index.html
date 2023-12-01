@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip to Mars</title>
+    <script type="text/javascript" src="data.js"></script>
+<body class="antialiased" style="background-color: black; text-align: center; color: white; font-family: 'Lucida Console', 'Courier New', monospace;">
+    <img src="https://media.tenor.com/a0lkGd18eL4AAAAC/spacecraft-solar-system.gif">
+    <h1 style="margin: 60px 0;">This spacecraft will arrive at Mars in:</h1>
+
+    <span id="calculations"></span><span> Months</span>
+
+    <script>
+        time = Math.round((data['miles'] / data['speed']) / (data['hours'] / 12)) ;
+        document.getElementById('calculations').innerText = time;
+
+        // Correct data:
+        // speed: 24600, 
+        // miles: 300000000,
+        // hours_in_365_days: 8760,
+        // Solution: 17 months.
+    </script>
+</body>
+</html>
