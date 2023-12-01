@@ -2,6 +2,6 @@
 
 data = {
         speed: 0, 
-        miles: 0,
+        miles: 300000000,
         hours: 0,
 };
