@@ -29,7 +29,7 @@ git pull
 
 We are going to use a Docker lab to tinker with docker. This is provided by the Play with Docker service and it will also hold our server for free!
 
-Login to ![Play with Docker](https://labs.play-with-docker.com/)
+Login to [Play with Docker](https://labs.play-with-docker.com/)
 
 
 
