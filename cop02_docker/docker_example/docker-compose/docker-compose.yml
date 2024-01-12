@@ -1,0 +1,27 @@
+version: "3.7"
+
+services:
+
+  web1:
+    hostname: web1
+    tty: true
+    build:
+      context: .
+    ports:
+      - "2222:22"
+    networks:
+      - web-net
+
+  web2:
+    hostname: web2
+    tty: true
+    build:
+      context: .
+    ports:
+      - "2223:22"
+    networks:
+      - web-net
+
+networks:
+  web-net:
+    driver: bridge
