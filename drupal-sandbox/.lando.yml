@@ -1,0 +1,15 @@
+name: drupal-sandbox
+recipe: drupal9
+config:
+  webroot: web
+  xdebug: true
+
+tooling:
+  install:
+    service: appserver
+    description: "site installation"
+    cmd:
+      - composer install
+      - drush sql-drop -y
+      - drush sqlq --file=../backups/vanilla_drupal.sql
+      - drush cr
